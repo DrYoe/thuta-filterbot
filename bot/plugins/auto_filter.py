@@ -203,10 +203,10 @@ async def auto_filter(bot, update):
 
 		
 		try:
-			await bot.send_photo(
+			await bot.send_message(
 				chat_id = update.chat.id,
-				photo= "./bot/photo.png",
-				caption=f"{update.from_user.mention}🧑‍💻,{query}အတွက် ▶️{(len_results)}ရှိ👇\n\n ✉️ဆက်သွယ်ရန်👇 \n<a href='https://t.me/#'>Memberသစ်များ</a> ♡ <a href='https://t.me/#'>ကြော်ငြာရှင်များ</a>",          
+				#photo= "./bot/photo.png",
+				text=f"{update.from_user.mention}🧑‍💻,{query}အတွက် ▶️{(len_results)}ရှိ👇\n\n ✉️ဆက်သွယ်ရန်👇 \n<a href='https://t.me/#'>Memberသစ်များ</a> ♡ <a href='https://t.me/#'>ကြော်ငြာရှင်များ</a>",          
 				reply_markup=reply_markup,
 				parse_mode=enums.ParseMode.HTML,
 				reply_to_message_id=update.id
