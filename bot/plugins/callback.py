@@ -141,7 +141,7 @@ async def cb_navg(bot, update: CallbackQuery):
         achatId = None
         #finder = {message.from_user.mention},
     reply_markup = InlineKeyboardMarkup(temp_results)
-    text=f"{update.from_user.mention}🧑‍💻,{query}အတွက် ▶️{leng}ရှိ👇\n\n ✉️ဆက်သွယ်ရန်👇 \n<a href='https://t.me/#'>Memberသစ်များ</a> ♡ <a href='https://t.me/#'>ကြော်ငြာရှင်များ</a>"
+    text=f"{update.from_user.mention}🧑‍💻,{query}အတွက် ▶️{leng}ရှိ👇\n\n ✉️ဆက်သွယ်ရန်👇 \n<a href='https://t.me/YoeNaung'>Memberသစ်များ</a> ♡ <a href='https://t.me/YoeNaung'>ကြော်ငြာရှင်များ</a>"
                
     try:
         await update.message.edit(
@@ -1605,7 +1605,7 @@ async def cb_about(bot, update: CallbackQuery):
         [
             InlineKeyboardButton
                 (
-                    "My Dev ⚡", url="https://t.me/tunyaing"
+                    "My Dev ⚡", url="https://t.me/YoeNaung"
                 ),
                 
             InlineKeyboardButton
@@ -1636,7 +1636,7 @@ async def callback_data(bot, update: CallbackQuery):
 
     if query_data == "start":
         buttons = [[
-            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/tunyaing')
+            InlineKeyboardButton('My Dev 👨‍🔬', url='https://t.me/YoeNaung')
         ]]
     
         reply_markup = InlineKeyboardMarkup(buttons)
