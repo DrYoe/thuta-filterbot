@@ -35,7 +35,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developer', url="https://t.me/tunyaing"
+                                    'Developer', url="https://t.me/YoeNaung"
                                 )
                         ]
                     ]
@@ -47,7 +47,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developer', url='https://t.me/tunyaing')
+        InlineKeyboardButton('Developer', url='https://t.me/YoeNaung')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
